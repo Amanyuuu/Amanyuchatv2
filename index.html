@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AmanyuChat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login">
+    <h1>AmanyuChat</h1>
+
+    <button id="googleLogin">
+        Continue with Google
+    </button>
+</div>
+
+<div id="chat" style="display:none;">
+    <h2>Global Chat</h2>
+
+    <div id="messages"></div>
+
+    <div class="send-box">
+        <input type="text" id="messageInput" placeholder="Type message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script type="module" src="script.js"></script>
+
+
+</body>
+</html>

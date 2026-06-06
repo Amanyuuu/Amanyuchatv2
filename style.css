@@ -1,0 +1,29 @@
+body{
+    font-family: Arial;
+    background:#1e1e1e;
+    color:white;
+    text-align:center;
+}
+
+#messages{
+    width:80%;
+    height:400px;
+    margin:auto;
+    overflow-y:auto;
+    border:1px solid #555;
+    padding:10px;
+    background:#2c2c2c;
+}
+
+.send-box{
+    margin-top:10px;
+}
+
+input{
+    padding:10px;
+}
+
+button{
+    padding:10px 15px;
+    cursor:pointer;
+}
