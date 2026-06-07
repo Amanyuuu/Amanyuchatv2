@@ -1,46 +1,117 @@
 body{
-    font-family: Arial, sans-serif;
-    background:#1e1e1e;
-    color:white;
-    text-align:center;
     margin:0;
-    padding:20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:#313338;
+    color:white;
 }
 
-h1,h2{
+/* Login Screen */
+
+#login{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+#login h1{
+    font-size:42px;
     margin-bottom:20px;
 }
 
-#messages{
-    width:80%;
-    max-width:800px;
-    height:400px;
+#googleLogin{
+    background:#5865F2;
+    color:white;
+    border:none;
+    padding:14px 24px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* Chat */
+
+#chat{
+    max-width:1000px;
     margin:auto;
+    padding:20px;
+}
+
+#chat h2{
+    background:#1e1f22;
+    margin:0;
+    padding:15px;
+    border-radius:12px 12px 0 0;
+}
+
+/* Messages */
+
+#messages{
+    height:500px;
     overflow-y:auto;
-    border:1px solid #555;
-    padding:10px;
-    background:#2c2c2c;
-    text-align:left;
+    background:#2b2d31;
+    padding:15px;
 }
 
 #messages p{
-    margin:8px 0;
+    margin:0;
+    padding:8px 0;
+    border-bottom:1px solid rgba(255,255,255,0.05);
 }
+
+#messages b{
+    color:#ffffff;
+}
+
+/* Send Box */
 
 .send-box{
-    margin-top:15px;
+    display:flex;
+    gap:10px;
+    background:#1e1f22;
+    padding:15px;
+    border-radius:0 0 12px 12px;
 }
 
-input{
-    width:300px;
-    padding:10px;
+.send-box input{
+    flex:1;
+    background:#383a40;
     border:none;
-    border-radius:5px;
+    color:white;
+    padding:12px;
+    border-radius:8px;
+    outline:none;
 }
 
-button{
-    padding:10px 15px;
+.send-box input::placeholder{
+    color:#aaa;
+}
+
+.send-box button{
+    background:#5865F2;
     border:none;
-    border-radius:5px;
+    color:white;
+    padding:12px 18px;
+    border-radius:8px;
     cursor:pointer;
+}
+
+.send-box button:hover{
+    background:#4752c4;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#2b2d31;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#555;
+    border-radius:10px;
 }
