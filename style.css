@@ -1,47 +1,46 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#1e1e1e;
+    color:white;
+    text-align:center;
+    margin:0;
+    padding:20px;
+}
+
+h1,h2{
+    margin-bottom:20px;
+}
+
+#messages{
+    width:80%;
+    max-width:800px;
+    height:400px;
+    margin:auto;
+    overflow-y:auto;
+    border:1px solid #555;
+    padding:10px;
+    background:#2c2c2c;
+    text-align:left;
+}
+
+#messages p{
+    margin:8px 0;
+}
+
+.send-box{
+    margin-top:15px;
+}
+
+input{
+    width:300px;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+}
+
 button{
-    background: linear-gradient(135deg, #5865F2, #4752C4);
-    color: white;
-    border: none;
-    border-radius: 12px;
-    padding: 12px 22px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    box-shadow: 0 4px 15px rgba(88,101,242,0.35);
-}
-
-button:hover{
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(88,101,242,0.5);
-}
-
-button:active{
-    transform: translateY(0);
-}
-
-/* Google Login Button */
-
-#googleLogin{
-    background: white;
-    color: #2c2c2c;
-    padding: 14px 26px;
-    font-size: 16px;
-    border-radius: 14px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
-}
-
-#googleLogin:hover{
-    background: #f5f5f5;
-}
-
-/* Send Button */
-
-.send-box button{
-    width: 50px;
-    height: 50px;
-    padding: 0;
-    border-radius: 50%;
-    font-size: 18px;
-    flex-shrink: 0;
+    padding:10px 15px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
 }
