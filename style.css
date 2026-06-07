@@ -1,42 +1,46 @@
 body{
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background:#1e1e1e;
     color:white;
     text-align:center;
+    margin:0;
+    padding:20px;
+}
+
+h1,h2{
+    margin-bottom:20px;
 }
 
 #messages{
     width:80%;
+    max-width:800px;
     height:400px;
     margin:auto;
     overflow-y:auto;
     border:1px solid #555;
     padding:10px;
     background:#2c2c2c;
+    text-align:left;
+}
+
+#messages p{
+    margin:8px 0;
 }
 
 .send-box{
-    margin-top:10px;
+    margin-top:15px;
 }
 
 input{
+    width:300px;
     padding:10px;
+    border:none;
+    border-radius:5px;
 }
 
 button{
     padding:10px 15px;
+    border:none;
+    border-radius:5px;
     cursor:pointer;
-}
-.message {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 10px 0;
-}
-
-.avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
 }
