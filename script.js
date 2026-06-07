@@ -48,12 +48,20 @@ document
 
 onAuthStateChanged(auth, (user) => {
 
-  if(user){
+  if (user) {
 
     currentUser = user;
 
     document.getElementById("login").style.display = "none";
     document.getElementById("chat").style.display = "block";
+
+  } else {
+
+    currentUser = null;
+
+    document.getElementById("login").style.display = "block";
+    document.getElementById("chat").style.display = "none";
+
   }
 
 });
