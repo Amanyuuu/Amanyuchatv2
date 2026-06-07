@@ -104,16 +104,25 @@ onSnapshot(q, (snapshot) => {
 
   if (!box) return;
 
- box.innerHTML += `
-<div class="message">
-  <img src="${data.photo}" class="avatar">
+  box.innerHTML = "";
 
-  <div>
-    <b>${data.username}</b><br>
-    ${data.text}
-  </div>
-</div>
-`;
+  snapshot.forEach((doc) => {
+    const data = doc.data();
+
+    box.innerHTML += `
+      <div class="message">
+        <img src="${data.photo || ''}" class="avatar">
+
+        <div>
+          <b>${data.username}</b><br>
+          ${data.text}
+        </div>
+      </div>
+    `;
+  });
+
+  box.scrollTop = box.scrollHeight;
+});
 
   snapshot.forEach((doc) => {
     const data = doc.data();
