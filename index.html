@@ -15,32 +15,24 @@
 </div>
 
 <div id="chat" style="display:none;">
-    <h2># global-chat</h2>
+    <h2>Global Chat</h2>
 
     <div id="messages"></div>
 
     <div class="send-box">
-        <input type="text"
-               id="messageInput"
-               placeholder="Message #global-chat">
+        <input
+            type="text"
+            id="messageInput"
+            placeholder="Type message..."
+        >
 
-      <button onclick="sendMessage()">
-    ➜
-</button>
-    </div>
-</div>
-    <button id="logoutBtn">Logout</button>
-
-    <div id="messages"></div>
-
-    <div class="send-box">
-        <input type="text" id="messageInput" placeholder="Type message...">
-        <button onclick="sendMessage()">Send</button>
+        <button onclick="sendMessage()">
+            Send
+        </button>
     </div>
 </div>
 
 <script type="module" src="script.js"></script>
-
 
 </body>
 </html>
