@@ -129,4 +129,4 @@ document
   if (e.key === "Enter") {
     sendMessage();
   }
-
+});
