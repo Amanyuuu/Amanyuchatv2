@@ -61,12 +61,15 @@ document
 .getElementById("logoutBtn")
 .addEventListener("click", async () => {
 
+  alert("Logout clicked");
+
   try {
     await signOut(auth);
-    console.log("Logged out");
+    alert("Firebase logout successful");
     location.reload();
   } catch(error) {
     console.error(error);
+    alert(error.message);
   }
 
 });
