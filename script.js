@@ -104,7 +104,16 @@ onSnapshot(q, (snapshot) => {
 
   if (!box) return;
 
-  box.innerHTML = "";
+ box.innerHTML += `
+<div class="message">
+  <img src="${data.photo}" class="avatar">
+
+  <div>
+    <b>${data.username}</b><br>
+    ${data.text}
+  </div>
+</div>
+`;
 
   snapshot.forEach((doc) => {
     const data = doc.data();
