@@ -4,15 +4,7 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
   onAuthStateChanged,
-document.getElementById("logoutBtn").addEventListener("click", async () => {
-  try {
-    await signOut(auth);
-    alert("Logged out!");
-    location.reload();
-  } catch (error) {
-    console.error(error);
-  }
-});
+  signOut
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import {
   getFirestore,
@@ -69,9 +61,13 @@ document
 .getElementById("logoutBtn")
 .addEventListener("click", async () => {
 
-  await signOut(auth);
-
-  location.reload();
+  try {
+    await signOut(auth);
+    console.log("Logged out");
+    location.reload();
+  } catch(error) {
+    console.error(error);
+  }
 
 });
 window.sendMessage = async function() {
