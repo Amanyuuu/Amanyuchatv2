@@ -1,46 +1,105 @@
 body{
-    font-family: Arial, sans-serif;
-    background:#1e1e1e;
-    color:white;
-    text-align:center;
     margin:0;
-    padding:20px;
+    font-family: "Segoe UI", sans-serif;
+    background:#313338;
+    color:white;
 }
 
-h1,h2{
-    margin-bottom:20px;
+#chat{
+    width:90%;
+    max-width:1200px;
+    margin:20px auto;
+}
+
+h2{
+    margin:0;
+    padding:15px;
+    background:#1e1f22;
+    border-radius:10px 10px 0 0;
 }
 
 #messages{
-    width:80%;
-    max-width:800px;
-    height:400px;
-    margin:auto;
+    height:500px;
     overflow-y:auto;
-    border:1px solid #555;
-    padding:10px;
-    background:#2c2c2c;
-    text-align:left;
+    background:#2b2d31;
+    padding:15px;
+    border-radius:0 0 10px 10px;
 }
 
-#messages p{
-    margin:8px 0;
+.message{
+    display:flex;
+    gap:12px;
+    padding:8px;
+    margin-bottom:10px;
+}
+
+.avatar{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.message b{
+    color:white;
+    display:block;
+    margin-bottom:2px;
 }
 
 .send-box{
+    display:flex;
+    gap:10px;
     margin-top:15px;
 }
 
-input{
-    width:300px;
-    padding:10px;
+.send-box input{
+    flex:1;
+    background:#383a40;
+    color:white;
     border:none;
-    border-radius:5px;
+    outline:none;
+    padding:12px;
+    border-radius:8px;
 }
 
-button{
-    padding:10px 15px;
+.send-box button{
+    width:55px;
     border:none;
-    border-radius:5px;
+    border-radius:8px;
+    background:#5865F2;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.send-box button:hover{
+    background:#4752c4;
+}
+
+#logoutBtn{
+    margin-top:10px;
+    background:#da373c;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#login{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+#googleLogin{
+    background:#5865F2;
+    color:white;
+    border:none;
+    padding:14px 24px;
+    border-radius:8px;
+    font-size:16px;
     cursor:pointer;
 }
