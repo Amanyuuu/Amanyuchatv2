@@ -3,7 +3,8 @@ import {
   getAuth,
   GoogleAuthProvider,
   signInWithPopup,
-  onAuthStateChanged
+  onAuthStateChanged,
+  signOut
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import {
   getFirestore,
@@ -56,7 +57,15 @@ onAuthStateChanged(auth, (user) => {
   }
 
 });
+document
+.getElementById("logoutBtn")
+.addEventListener("click", async () => {
 
+  await signOut(auth);
+
+  location.reload();
+
+});
 window.sendMessage = async function() {
   const text = document.getElementById("messageInput").value;
 
