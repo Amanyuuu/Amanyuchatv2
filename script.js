@@ -98,7 +98,6 @@ window.sendMessage = async function() {
 };
 
 const q = query(collection(db, "messages"), orderBy("time"));
-
 onSnapshot(q, (snapshot) => {
   const box = document.getElementById("messages");
 
@@ -118,17 +117,6 @@ onSnapshot(q, (snapshot) => {
           ${data.text}
         </div>
       </div>
-    `;
-  });
-
-  box.scrollTop = box.scrollHeight;
-});
-
-  snapshot.forEach((doc) => {
-    const data = doc.data();
-
-    box.innerHTML += `
-      <p><b>${data.username}</b>: ${data.text}</p>
     `;
   });
 
