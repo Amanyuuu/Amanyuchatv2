@@ -125,3 +125,12 @@ onSnapshot(q, (snapshot) => {
 
   box.scrollTop = box.scrollHeight;
 });
+document
+.getElementById("messageInput")
+.addEventListener("keypress", (e) => {
+
+  if (e.key === "Enter") {
+    sendMessage();
+  }
+
+});
